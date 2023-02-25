@@ -1,6 +1,7 @@
 body {
   background-image: url(media/xpbackground.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -114,7 +115,7 @@ button:hover {
 
 .current-condition {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   color: black;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.5);
