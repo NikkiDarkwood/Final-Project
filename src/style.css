@@ -36,6 +36,16 @@ h2 {
   margin: 20px auto;
 }
 
+strong {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 10px auto;
+}
+
 .search-box {
   margin: 0 auto;
   text-align: center;
@@ -153,10 +163,9 @@ button:hover {
   color: black;
   background-color: rgb(162, 190, 179, 0.8);
   border-radius: 25px;
-  padding-right: 18px;
   width: 75px;
   height: 36px;
-  text-align: right;
+  text-align: center;
   position: relative;
   top: -41px;
   right: -56px;
@@ -250,4 +259,14 @@ a {
 .git-link {
   color: #769fcd;
   font-size: 14px;
+}
+
+.temperature-box .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.temperature-box .active.hover {
+  text-decoration: none;
 }

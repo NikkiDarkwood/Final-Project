@@ -30,16 +30,16 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>Weather Forecast</h1>
+          <h1>Today's Weather</h1>
           <h2 id="date">Date</h2>
           <div class="search-box">
             <form id="city-form">
               <input type="text" id="city-input" placeholder="Enter a city" />
-              <input type="submit" value="search" />
+              <input type="submit" value="Search" />
             </form>
           </div>
           <div>
-            <button id="current-location-button">
+            <button id="location-button" type="click">
               <i class="fa-solid fa-location-arrow location-icon"></i> Current
               Location
             </button>
@@ -52,16 +52,18 @@
                   <div class="temperature-box">
                     <span class="temperature" id="temperature"> </span>
                     <span class="units">
-                      <a href="#" id="fahrenheit-link">°F</a> |
-                      <a href="#" id="celsius-link">°C</a>
+                      <a href="#" id="celsius-link" class="active">°C</a> |
+                      <a href="#" id="fahrenheit-link">°F</a>
                     </span>
                   </div>
                 </div>
               </div>
 
-              <div class="col current-condition" id="description">
-                Clear Sky
-                <div id="icon">hello</div>
+              <div class="col current-condition">
+                <div id="description">Clear</div>
+                <div>
+                  <img src="" alt="Clear" id="icon" class="float-left" />
+                </div>
               </div>
             </div>
           </div>
@@ -87,6 +89,7 @@
         <div class="col-4">
           <div class="forecast-container">
             <div class="row">
+              <strong>Forecast</strong>
               <div class="row">
                 <div class="weather-box">
                   Monday 12/02
