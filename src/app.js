@@ -103,6 +103,24 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
+//Forecast Coding
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  forecastElement.innerHTML = `
+  <div class="row">
+                  <div class="weather-forecast-date">Monday 12/02</div>
+                  <img class="forecast-icon">⚡️</div
+                  <div class="weather-forecast-temperatures">
+                    <span class="weather-forecast-temperatures-max">75°</span>
+                    |
+                    <span class="weather-forecast-temperatures-min">49°</span>
+                  </div>
+                </div>
+  `;
+}
+
 //Current Location
 
 function searchLocation(position) {
@@ -123,3 +141,4 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 //Default starting search
 
 search("New York");
+displayForecast();

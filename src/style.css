@@ -211,7 +211,7 @@ button:hover {
   left: 7px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
-.weather-forecast {
+.weather-forecast-box {
   background-color: #769fcd;
   padding: 15px;
   border-radius: 25px;
@@ -220,8 +220,23 @@ button:hover {
   max-height: 3000px;
 }
 
+.weather-forecast {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+  margin: 5px;
+  max-width: 170px;
+  max-height: 800px;
+  position: relative;
+  left: 7px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .weather-forecast-temperatures-min {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .last-updated {
