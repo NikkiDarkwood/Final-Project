@@ -211,13 +211,17 @@ button:hover {
   left: 7px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
-.forecast-container {
+.weather-forecast {
   background-color: #769fcd;
   padding: 15px;
   border-radius: 25px;
   margin: 5px;
   max-width: 200px;
   max-height: 3000px;
+}
+
+.weather-forecast-temperatures-min {
+  opacity: 0.5;
 }
 
 .last-updated {
