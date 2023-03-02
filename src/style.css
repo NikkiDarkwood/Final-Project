@@ -38,12 +38,10 @@ h2 {
 
 strong {
   display: block;
+  margin: 10px auto;
   text-align: center;
   font-size: 24px;
   color: black;
-  padding: 5px;
-  border-radius: 25px;
-  margin: 10px auto;
 }
 
 .search-box {
@@ -133,7 +131,6 @@ button:hover {
   margin: 5px;
   margin-right: 20px;
   max-width: 200px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 .temperature {
   font-size: 55px;
@@ -198,41 +195,38 @@ button:hover {
   right: -56px;
 }
 .weather-box {
+  display: block;
+  margin: 0 auto;
   text-align: center;
   font-size: 16px;
   color: black;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 25px;
-  margin: 5px;
   max-width: 200px;
   max-height: 800px;
   position: relative;
-  left: 7px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 .weather-forecast-box {
+  display: block;
+  margin: 0 auto;
   background-color: #769fcd;
-  padding: 15px;
+  padding: 15px 30px 5px 30px;
   border-radius: 25px;
-  margin: 5px;
   max-width: 200px;
   max-height: 3000px;
+  font-size: 16px;
 }
 
 .weather-forecast {
+  display: block;
+  margin: 0 auto;
   text-align: center;
-  font-size: 16px;
   color: black;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 25px;
-  margin: 5px;
-  max-width: 170px;
-  max-height: 800px;
   position: relative;
-  left: 7px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .weather-forecast-temperatures-min {

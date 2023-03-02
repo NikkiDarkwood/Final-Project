@@ -108,17 +108,32 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  forecastElement.innerHTML = `
-  <div class="row">
-                  <div class="weather-forecast-date">Monday 12/02</div>
-                  <img class="forecast-icon">⚡️</div
-                  <div class="weather-forecast-temperatures">
-                    <span class="weather-forecast-temperatures-max">75°</span>
-                    |
-                    <span class="weather-forecast-temperatures-min">49°</span>
-                  </div>
-                </div>
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+
+  let forecastHTML = `<div>`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="weather-forecast">
+        <div class="weather-forecast-date">${day}</div>
+        <img
+          src="http://openweathermap.org/img/wn/50d@2x.png"
+          alt=""
+          width="42"
+        />
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max"> 18° </span>
+		|
+          <span class="weather-forecast-temperature-min"> 12° </span>
+        </div>
+      </div>
+      </br>
   `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
 }
 
 //Current Location
