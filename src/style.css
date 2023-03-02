@@ -2,6 +2,7 @@ body {
   background-image: url(media/xpbackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  font-weight: bolder;
 }
 
 .container {
@@ -56,6 +57,7 @@ input[type="text"] {
   color: black;
   font-size: 20px;
   border: 0px;
+  font-weight: bolder;
   border-radius: 60px 0px 0px 60px;
   border-color: #5f88b6;
   padding: 10px 24px;
@@ -68,6 +70,7 @@ input[type="submit"] {
   background-color: #a8c3d4;
   border: 0px;
   font-size: 20px;
+  font-weight: bolder;
   color: black;
   border-radius: 0px 60px 60px 0px;
   padding: 10px 24px;
@@ -88,6 +91,7 @@ button {
   background: #769fcd;
   border: 0px;
   color: black;
+  font-weight: bolder;
   border-radius: 60px;
   letter-spacing: 1px;
   font-size: 14px;
@@ -211,7 +215,7 @@ button:hover {
   display: block;
   margin: 0 auto;
   background-color: #769fcd;
-  padding: 15px 30px 5px 30px;
+  padding: 15px 30px 0px 30px;
   border-radius: 25px;
   max-width: 200px;
   max-height: 3000px;
@@ -222,6 +226,7 @@ button:hover {
   display: block;
   margin: 0 auto;
   text-align: center;
+  font-weight: bolder;
   color: black;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.6);
@@ -229,8 +234,8 @@ button:hover {
   position: relative;
 }
 
-.weather-forecast-temperatures-min {
-  opacity: 0.7;
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
 
 .last-updated {
