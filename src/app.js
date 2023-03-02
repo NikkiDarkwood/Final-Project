@@ -64,13 +64,12 @@ function displayForecast(response) {
 
   let forecastHTML = `<div>`;
   forecast.forEach(function (forecastDay, index) {
-    if (index > 0 && index < 5) {
+    if (index > 0 && index < 6) {
       forecastHTML =
         forecastHTML +
         `<div class="row">
-      <div class="weather-forecast">
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
-        <img
+        <img class="forecastIcon"
           src="http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
           }@2x.png"
@@ -192,4 +191,3 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 //Default starting search
 
 search("New York");
-displayForecast();
